@@ -1,5 +1,7 @@
 # adesam
 
+Adesam is family website with e-commerce
+
 THe first video for demo
 
 
