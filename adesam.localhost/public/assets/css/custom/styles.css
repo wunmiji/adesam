@@ -1,0 +1,450 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:root {
+    --color-first-100: #FF66C4;
+    --color-first-180: #FF66C480;
+    --color-first-200: #FF7ACB;
+    --color-first-300: #FF8DD1;
+    --color-first-400: #FF9ED8;
+    --color-first-500: #FFAFDE;
+    --color-first-600: #FFC0E5;
+    --color-first-680: #FFC0E580;
+
+
+    --color-second-100: #F5F5F5;
+    --color-second-200: #F7F7F7;
+    --color-second-300: #F9F9F9;
+    --color-second-400: #FBFBFB;
+    --color-second-500: #FDFDFD;
+    --color-second-600: #FFFFFF;
+
+
+    --color-third-100: #1A1625;
+    --color-third-130: #1A162530;
+    --color-third-200: #2F2B3A;
+    --color-third-300: #46424F;
+    --color-third-400: #5E5A66;
+    --color-third-500: #76737E;
+    --color-third-600: #908D96;
+
+    --border-radius: 0.25rem;
+    --card-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, var(--color-third-130) 0px 1px 3px -1px;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: var(--color-third-100);
+}
+
+[data-bs-theme="light"] {
+    --bs-body-bg: var(--color-second-600);
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 3.26rem;
+}
+
+[data-bs-theme=dark] * {
+    color: var(--color-second-600);
+}
+
+[data-bs-theme=light] * {
+    color: var(--color-third-300);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.border-radius {
+    border-radius: var(--border-radius);
+}
+
+.color-first-100 {
+    color: var(--color-first-100) !important;
+}
+
+.color-second-600 {
+    color: var(--color-second-600) !important;
+}
+
+img {
+    border-radius: var(--border-radius);
+}
+
+
+
+
+/*  Alert */
+/*  Alert */
+/*  Alert */
+.alert-success {
+    border: 0;
+    border-left: 6px solid #a3cfbb;
+    border-radius: 0;
+}
+
+.alert-danger {
+    border: 0;
+    border-left: 6px solid #f1aeb5;
+    border-radius: 0;
+}
+
+.text-danger.text-sm {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: small;
+}
+
+
+/*  Navbar */
+/*  Navbar */
+/*  Navbar */
+.navbar-font {
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+[data-bs-theme=light] .navbar-custom {
+    background-color: var(--color-second-400);
+}
+
+[data-bs-theme=dark] .navbar-custom {
+    background-color: var(--color-third-200);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.nav-item {
+    font-size: 1rem;
+}
+
+header ul li a:hover,
+header ul li a i:hover,
+.navbar-toggler:hover {
+    color: var(--color-first-100) !important;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:active {
+    background-color: inherit;
+}
+
+.nav-pills .nav-link:hover {
+    color: var(--color-first-100);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--color-first-100);
+}
+
+
+
+/*  Primary Button */
+/*  Primary Button */
+/*  Primary Button */
+.primary-btn {
+    background-color: var(--color-first-100);
+    border-radius: var(--border-radius);
+    transition: 0.25s;
+    color: var(--color-second-600);
+    border: none;
+}
+
+.primary-btn:disabled,
+.primary-btn:hover,
+.primary-btn:focus,
+.primary-btn:active {
+    background-color: var(--color-first-180);
+    color: var(--color-second-600);
+}
+
+.primary-btn i {
+    color: var(--color-second-600);
+}
+
+[data-bs-theme=light] .primary-outline-btn {
+    background-color: var(--color-second-600);
+    border: 1px solid var(--color-first-100) !important;
+}
+
+[data-bs-theme=light] .primary-outline-btn:hover {
+    background-color: var(--color-first-100);
+    color: var(--color-second-400);
+}
+
+[data-bs-theme=dark] .primary-outline-btn {
+    background-color: var(--color-third-100);
+    color: var(--color-second-600);
+    border: 1px solid var(--color-first-100) !important;
+}
+
+[data-bs-theme=dark] .primary-outline-btn:hover {
+    background-color: var(--color-first-100);
+    color: var(--color-second-600);
+    border: 1px solid var(--color-first-100) !important;
+}
+
+
+
+
+
+
+/*  Badge */
+/*  Badge */
+/*  Badge */
+.badge {
+    border-radius: var(--border-radius) !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
+    font-weight: 500;
+    color: var(--color-second-600);
+}
+
+.badge-label {
+    background-color: var(--color-first-100);
+}
+
+
+
+
+/*  Breadcrumb */
+/*  Breadcrumb */
+/*  Breadcrumb */
+nav .breadcrumb .breadcrumb-item a i {
+    text-decoration: none;
+}
+
+.breadcrumb-item+.breadcrumb-item:before {
+    content: ' / ';
+}
+
+.breadcrumb-item.active {
+    color: var(--color-first-100);
+}
+
+
+
+
+
+/*  Card */
+/*  Card */
+/*  Card */
+.card {
+    border: none !important;
+    border-radius: 0;
+    padding: 0 !important;
+}
+
+.card-header {
+    background-color: transparent;
+    border: 0;
+}
+
+.card-border {
+    border-radius: var(--border-radius);
+}
+
+[data-bs-theme=light] .card-border {
+    border: 2px solid var(--color-second-100) !important;
+}
+
+[data-bs-theme=dark] .card-border {
+    border: 2px solid var(--color-third-200) !important;
+}
+
+.product-image-div {
+    background-color: var(--color-first-680);
+}
+
+.shop-product-card .card-img-top {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.occasion-card .card-img-top {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.card-img-top-div {
+    position: relative;
+}
+
+.card-img-top-div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-third-130);
+}
+
+
+
+
+
+/*  swiper */
+/*  swiper */
+/*  swiper */
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-second-600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper.home-swiper {
+    height: 30rem;
+
+    --swiper-pagination-color: var(--color-first-100) !important;
+    --swiper-pagination-bullet-inactive-color: var(--color-second-600) !important;
+    --swiper-pagination-bullet-inactive-opacity: 0.7;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+}
+
+
+
+/*  toast */
+/*  toast */
+/*  toast */
+#toast-container > div,
+#toast-container>div:hover {
+    box-shadow: none;
+}
+
+#toast-container .toast-message {
+    color: var(--color-second-600);
+  }
+
+
+
+
+/*  offCanvas */
+/*  offCanvas */
+/*  offCanvas */
+.offcanvas {
+    --bs-offcanvas-width: 300px;
+}
+
+.accordion-button {
+    background: transparent;
+    outline: none;
+    color: inherit;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    color: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    box-shadow: none;
+    color: inherit;
+}
+
+.accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-family: fontawesome;
+    width: auto;
+    height: auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    content: "\2212";
+}
+
+
+
+
+
+
+
+/*  Footer  */
+/*  Footer  */
+/*  Footer  */
+[data-bs-theme=light] footer {
+    background-color: var(--color-second-400);
+}
+
+[data-bs-theme=dark] footer {
+    background-color: var(--color-third-200);
+}
+
+footer ul li a:hover,
+footer ul li a i:hover {
+    color: var(--color-first-100) !important;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .swiper.home-swiper {
+        height: 13rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .swiper.home-swiper {
+        height: 20rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .swiper.home-swiper {
+        height: 23rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .swiper.home-swiper {
+        height: 27rem;
+    }
+}

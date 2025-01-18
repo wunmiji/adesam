@@ -1,0 +1,15 @@
+/*  Modal */
+/*  Modal */
+/*  MOdal */
+.view-modal {
+    background-color: rgba(var(--color-third-500), 0.3);
+}
+
+.view-modal .modal-title,
+.view-modal i {
+    color: var(--color-second-600) !important;
+}
+
+.view-close-btn-modal {
+    color: var(--color-second-600);
+}

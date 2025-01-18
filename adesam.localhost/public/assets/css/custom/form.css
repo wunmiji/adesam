@@ -1,0 +1,49 @@
+/*  Form */
+/*  Form */
+/*  Form */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    border: none !important;
+    border-radius: 0.2rem !important;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--color-first-100);
+    border-color: var(--color-first-100);
+}
+
+[data-bs-theme="dark"] input[type=text],
+[data-bs-theme="dark"] input[type=password],
+[data-bs-theme="dark"] input[type=email],
+[data-bs-theme="dark"] input[type=tel],
+[data-bs-theme="dark"] select,
+[data-bs-theme="dark"] textarea {
+    background: var(--color-third-200) !important;
+    background-color: var(--color-third-200) !important;
+}
+
+[data-bs-theme="light"] input[type=text],
+[data-bs-theme="light"] input[type=password],
+[data-bs-theme="light"] input[type=email],
+[data-bs-theme="light"] input[type=tel],
+[data-bs-theme="light"] select,
+[data-bs-theme="light"] textarea {
+    background: var(--color-second-100) !important;
+    background-color: var(--color-second-100) !important;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus textarea:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}

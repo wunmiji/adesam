@@ -1,0 +1,1 @@
+<p class="card-title fs-2 fw-semibold text-center"><?= $title; ?></p>
